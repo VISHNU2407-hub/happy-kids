@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Happy Kids High School — a co-educational, private unaided, recognized school in Shakarajupalle Village, Sidhout Block, Y.S.R. Kadapa District, Andhra Pradesh. Nurturing students from Nursery to Class 10 with CBSE curriculum, values and care.">
+  <meta name="keywords" content="Happy Kids High School, school Kadapa, CBSE school Andhra Pradesh, Nursery to Class 10, residential school, day and residential school, Sidhout, YSR Kadapa">
+  <meta name="author" content="Happy Kids High School">
+  <meta property="og:title" content="Happy Kids High School — Quality Education in Y.S.R. Kadapa, AP">
+  <meta property="og:description" content="A nurturing environment for academic excellence from Nursery to Class 10 — at the heart of rural Y.S.R. Kadapa.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#14452D">
+
+  <title>Happy Kids High School | Quality Education in Y.S.R. Kadapa, AP</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ==================== SKIP TO CONTENT ==================== -->
+  <a href="#dashboard" class="skip-link">Skip to main content</a>
+
+  <!-- ==================== TOP BAR ==================== -->
+  <div class="top-bar" id="topBar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <div class="top-bar-left">
+          <div class="top-bar-item">
+            <i data-lucide="phone"></i>
+            <a href="tel:+917997599852">+91 79975 99852</a>
+          </div>
+          <div class="top-bar-item">
+            <i data-lucide="mail"></i>
+            <a href="mailto:info@happykidshs.edu.in">info@happykidshs.edu.in</a>
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <span class="top-bar-note"><i data-lucide="map-pin"></i> Shakarajupalle, Sidhout, Y.S.R. Kadapa, A.P.</span>
+          <a href="https://wa.me/917997599852" target="_blank" rel="noopener" class="top-bar-social" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <div class="navbar-logo" data-panel="home" role="button" tabindex="0" aria-label="Go to Home">
+          <span class="navbar-logo-tile"><img src="images/opt/logo.jpg" alt="Happy Kids High School logo" class="navbar-logo-img"></span>
+          <span class="navbar-logo-text">
+            <span class="logo-title">Happy Kids</span>
+            <span class="logo-subtitle">High School</span>
+          </span>
+        </div>
+
+        <nav class="navbar-nav" id="navbarNav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link active" data-panel="home">Home</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link" data-panel="about">About</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link" data-panel="academics">Academics</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link" data-panel="campus">Campus Life</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link" data-panel="gallery">Gallery</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link" data-panel="admissions">Admissions</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link" data-panel="branches">Campuses</a></li>
+            <li class="nav-item"><a href="javascript:void(0)" class="nav-link" data-panel="contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar-actions">
+          <a href="javascript:void(0)" class="btn btn-accent btn-sm navbar-btn" data-panel="admissions">Apply Now</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE OVERLAY & DRAWER ==================== -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <span class="navbar-logo-tile"><img src="images/opt/logo.jpg" alt="Happy Kids" class="mobile-drawer-logo-img"></span>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu"><i data-lucide="x"></i></button>
+    </div>
+    <nav class="mobile-drawer-nav" aria-label="Mobile navigation">
+      <button class="mobile-nav-item active" data-panel="home"><span>Home</span><i data-lucide="chevron-right"></i></button>
+      <button class="mobile-nav-item" data-panel="about"><span>About</span><i data-lucide="chevron-right"></i></button>
+      <button class="mobile-nav-item" data-panel="academics"><span>Academics</span><i data-lucide="chevron-right"></i></button>
+      <button class="mobile-nav-item" data-panel="campus"><span>Campus Life</span><i data-lucide="chevron-right"></i></button>
+      <button class="mobile-nav-item" data-panel="gallery"><span>Gallery</span><i data-lucide="chevron-right"></i></button>
+      <button class="mobile-nav-item" data-panel="admissions"><span>Admissions</span><i data-lucide="chevron-right"></i></button>
+      <button class="mobile-nav-item" data-panel="branches"><span>Campuses</span><i data-lucide="chevron-right"></i></button>
+      <button class="mobile-nav-item" data-panel="contact"><span>Contact</span><i data-lucide="chevron-right"></i></button>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/917997599852" target="_blank" rel="noopener" class="btn btn-accent btn-sm btn-block"><i data-lucide="message-circle"></i> Chat on WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero dashboard-panel active" id="hero" data-panel="home">
+    <div class="hero-bg" id="heroBg">
+      <img src="images/opt/campus-hero.jpg" alt="Happy Kids High School campus" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-badge">
+          <i data-lucide="star"></i> <span>Admissions Open 2026–27</span>
+        </div>
+        <h1 class="hero-title">
+          Inspiring Excellence.<br>
+          <span class="text-accent">Building Futures.</span>
+        </h1>
+        <p class="hero-subtitle">
+          A nurturing environment for academic excellence from Nursery to Class 10 — at the heart of rural Y.S.R. Kadapa.
+        </p>
+        <div class="hero-buttons">
+          <a href="javascript:void(0)" class="btn btn-accent btn-lg" data-panel="admissions">
+            Apply Now <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="javascript:void(0)" class="btn btn-ghost btn-lg" data-panel="contact">
+            Visit Our Campus <i data-lucide="map-pin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real facts bar -->
+    <div class="hero-facts">
+      <div class="container">
+        <div class="hero-facts-inner">
+          <div class="hero-fact"><strong>Nursery – 10</strong><span>Classes</span></div>
+          <div class="hero-fact"><strong>CBSE</strong><span>Syllabus</span></div>
+          <div class="hero-fact"><strong>Recognized</strong><span>Private Unaided School</span></div>
+          <div class="hero-fact"><strong>Day &amp; Residential</strong><span>Co-educational</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="mouse"><div class="wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ==================== DASHBOARD CONTENT WORKSPACE ==================== -->
+  <main class="dashboard" id="dashboard">
+
+  <!-- ==================== WELCOME / ABOUT INTRO (Home) ==================== -->
+  <section class="section welcome-section dashboard-panel" id="home-about" data-panel="home">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-image reveal-left">
+          <div class="welcome-image-main">
+            <img src="images/opt/campus.jpg" alt="Happy Kids High School campus building" loading="lazy">
+          </div>
+          <div class="welcome-image-deco">
+            <img src="images/opt/logo.jpg" alt="Happy Kids High School emblem" loading="lazy">
+          </div>
+          <div class="welcome-experience-badge">
+            <span class="exp-number">N–10</span>
+            <span class="exp-text">Nursery to<br>Class 10</span>
+          </div>
+        </div>
+
+        <div class="welcome-content reveal-right">
+          <span class="section-tag">Welcome to Happy Kids</span>
+          <h2 class="section-title">A school built on care,<br>curiosity &amp; <span class="text-accent">character</span></h2>
+          <p class="welcome-text">
+            Happy Kids High School is a co-educational, private unaided (recognized) Upper Primary and Secondary institution located in Shakarajupalle Village, Sidhout Block, Y.S.R. Kadapa District, Andhra Pradesh. We serve students from Nursery to Class 10 with a strong academic foundation and values-based learning.
+          </p>
+          <p class="welcome-text">
+            Our rural campus combines modern teaching methods with the warmth of a close-knit community, so every child is seen, heard and supported.
+          </p>
+
+          <div class="welcome-features">
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>Nursery to Class 10</span></div>
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>CBSE &amp; SSC Curriculum</span></div>
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>100% English Medium Campus</span></div>
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>Day &amp; Residential (Boys Hostel)</span></div>
+          </div>
+
+          <div class="welcome-footer">
+            <a href="javascript:void(0)" class="btn btn-primary" data-panel="about">
+              More About Us <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="javascript:void(0)" class="btn btn-outline-dark" data-panel="admissions">
+              Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US (Home) ==================== -->
+  <section class="section why-section dashboard-panel" id="home-why" data-panel="home">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Why Happy Kids</span>
+        <h2 class="section-title">Why families <span class="text-accent">choose us</span></h2>
+        <p class="section-desc">A school built on care, curiosity and character — where every learner grows with confidence.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal-up" style="--delay: 0.1s">
+          <div class="why-icon"><i data-lucide="book-open"></i></div>
+          <h3>Dedicated Faculty</h3>
+          <p>Qualified, committed teachers who know every child and are invested in their growth.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay: 0.2s">
+          <div class="why-icon"><i data-lucide="users"></i></div>
+          <h3>Holistic Development</h3>
+          <p>Nurturing intellect, character, creativity and physical well-being in equal measure.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay: 0.3s">
+          <div class="why-icon"><i data-lucide="shield-check"></i></div>
+          <h3>Safe Campus</h3>
+          <p>A protected, supportive environment where students learn freely and confidently.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay: 0.4s">
+          <div class="why-icon"><i data-lucide="graduation-cap"></i></div>
+          <h3>Academic Excellence</h3>
+          <p>A strong academic foundation built on conceptual clarity and real-world skills.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay: 0.5s">
+          <div class="why-icon"><i data-lucide="globe"></i></div>
+          <h3>English Environment</h3>
+          <p>A 100% English-speaking campus to build confidence, fluency and global readiness.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay: 0.6s">
+          <div class="why-icon"><i data-lucide="lightbulb"></i></div>
+          <h3>Smart Learning</h3>
+          <p>Digital classrooms and modern methods for engaging, concept-based education.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay: 0.7s">
+          <div class="why-icon"><i data-lucide="target"></i></div>
+          <h3>Competitive Foundation</h3>
+          <p>Early preparation for NEET, JEE and civil services through focused foundation coaching.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay: 0.8s">
+          <div class="why-icon"><i data-lucide="home"></i></div>
+          <h3>Residential Facility</h3>
+          <p>Comfortable, supervised hostel accommodation for boys in a secure environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACADEMICS PREVIEW (Home) ==================== -->
+  <section class="section academics-section dashboard-panel" id="home-academics" data-panel="home">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Our Academics</span>
+        <h2 class="section-title">A curriculum that builds<br><span class="text-accent">thinkers, not memorizers</span></h2>
+        <p class="section-desc">Conceptual understanding, real-world application and independent learners — ready for higher education and life beyond school.</p>
+      </div>
+
+      <div class="academics-grid">
+        <div class="academic-card reveal-up" style="--delay: 0.1s">
+          <div class="academic-icon"><i data-lucide="book"></i></div>
+          <h3>CBSE &amp; SSC</h3>
+          <p>Nationally recognized curricula providing a strong academic foundation.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.2s">
+          <div class="academic-icon"><i data-lucide="child"></i></div>
+          <h3>Nursery to Class 10</h3>
+          <p>A complete journey from early childhood to secondary education.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.3s">
+          <div class="academic-icon"><i data-lucide="globe"></i></div>
+          <h3>English Medium</h3>
+          <p>Full English instruction to develop fluency and confidence.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.4s">
+          <div class="academic-icon"><i data-lucide="presentation"></i></div>
+          <h3>Smart Classrooms</h3>
+          <p>Digital boards and modern learning tools in every classroom.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.5s">
+          <div class="academic-icon"><i data-lucide="brain"></i></div>
+          <h3>Concept-Based Learning</h3>
+          <p>Deep understanding rather than rote memorization.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.6s">
+          <div class="academic-icon"><i data-lucide="trending-up"></i></div>
+          <h3>Competitive Foundation</h3>
+          <p>Focused preparation for NEET, JEE and civil services.</p>
+        </div>
+      </div>
+
+      <div class="section-cta reveal-up">
+        <a href="javascript:void(0)" class="btn btn-primary btn-lg" data-panel="academics">Explore Academics <i data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOUNDER & DIRECTOR (Home) ==================== -->
+  <section class="section founders-section dashboard-panel" id="home-founders" data-panel="home">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Leadership</span>
+        <h2 class="section-title">Rooted in knowledge,<br>guided by <span class="text-accent">values</span></h2>
+      </div>
+
+      <div class="founders-grid">
+        <article class="founder-card reveal-up" style="--delay: 0.1s">
+          <div class="founder-image">
+            <img src="images/opt/founder-anil.jpg" alt="K. Anil Kumar Reddy, Founder" loading="lazy">
+          </div>
+          <div class="founder-body">
+            <span class="founder-role">Founder's Message</span>
+            <blockquote>“At Happy Kids High School, we believe quality education is the right of every child. We nurture young minds with knowledge, strong values, and quiet confidence. By harmonising modern learning with rich cultural roots, we inspire every student to grow, excel, and lead with purpose.”</blockquote>
+            <div class="founder-name">K. Anil Kumar Reddy</div>
+            <div class="founder-title">Founder, Happy Kids High School</div>
+          </div>
+        </article>
+
+        <article class="founder-card reveal-up" style="--delay: 0.2s">
+          <div class="founder-image">
+            <img src="images/opt/founder-shiva.jpg" alt="P. Siva Kumari, Director" loading="lazy">
+          </div>
+          <div class="founder-body">
+            <span class="founder-role">Director's Message</span>
+            <blockquote>“At Happy Kids High School, we provide a balanced and meaningful learning environment. We build strong academics alongside confidence and creativity. With dedicated guidance, we prepare students to grow into capable and responsible individuals.”</blockquote>
+            <div class="founder-name">Smt. P. Siva Kumari</div>
+            <div class="founder-title">Director, Happy Kids High School</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY PREVIEW (Home) ==================== -->
+  <section class="section gallery-preview-section dashboard-panel" id="home-gallery" data-panel="home">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Campus Life</span>
+        <h2 class="section-title">Life at <span class="text-accent">Happy Kids</span></h2>
+        <p class="section-desc">Learning extends beyond the classroom — through sports, arts, festivals and friendship.</p>
+      </div>
+
+      <div class="gallery-preview-grid">
+        <figure class="gp-item reveal-up" style="--delay: 0.1s">
+          <img src="images/opt/campus.jpg" alt="School campus building" loading="lazy">
+          <figcaption>Our Campus</figcaption>
+        </figure>
+        <figure class="gp-item reveal-up" style="--delay: 0.2s">
+          <img src="images/opt/founder-anil.jpg" alt="Founder of the school" loading="lazy">
+          <figcaption>Our Founder</figcaption>
+        </figure>
+        <figure class="gp-item reveal-up" style="--delay: 0.3s">
+          <img src="images/opt/founder-shiva.jpg" alt="Director of the school" loading="lazy">
+          <figcaption>Our Director</figcaption>
+        </figure>
+        <figure class="gp-item reveal-up" style="--delay: 0.4s">
+          <img src="images/opt/campus-sm.jpg" alt="Campus courtyard" loading="lazy">
+          <figcaption>Courtyard</figcaption>
+        </figure>
+      </div>
+
+      <div class="section-cta reveal-up">
+        <a href="javascript:void(0)" class="btn btn-outline-dark btn-lg" data-panel="gallery">View Full Gallery <i data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ADMISSIONS CTA (Home) ==================== -->
+  <section class="section admissions-cta-section dashboard-panel" id="home-admissions" data-panel="home">
+    <div class="container">
+      <div class="admissions-cta-card reveal-up">
+        <div class="admissions-cta-content">
+          <span class="section-tag section-tag-light">Admissions Open</span>
+          <h2 class="section-title section-title-light">Admissions Open for<br><span class="text-accent">2026–27 Academic Year</span></h2>
+          <p class="admissions-cta-desc">Limited seats available per class. Apply early to secure your child's place at Happy Kids High School.</p>
+        </div>
+        <div class="admissions-cta-actions">
+          <a href="javascript:void(0)" class="btn btn-accent btn-lg" data-panel="admissions">Apply Now <i data-lucide="arrow-right"></i></a>
+          <a href="javascript:void(0)" class="btn btn-ghost btn-lg" data-panel="contact">Enquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT (panel) ==================== -->
+  <section class="section about-main dashboard-panel" id="about" data-panel="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal-left">
+          <span class="section-tag">About Our School</span>
+          <h2 class="section-title">A nurturing campus where every learner is <span class="text-accent">seen, heard &amp; supported</span></h2>
+          <p class="welcome-text">
+            Happy Kids High School is a co-educational, private unaided (recognized) Upper Primary and Secondary institution located in Shakarajupalle Village, Sidhout Block, Y.S.R. Kadapa District, Andhra Pradesh. We serve students from Nursery to Class 10 with a structured curriculum and values-based learning.
+          </p>
+          <p class="welcome-text">
+            As a rural campus serving the local community, we are recognized by the relevant education authorities and continue to grow — currently operational and committed to quality education for every child who walks through our gates.
+          </p>
+          <div class="welcome-features">
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>Classes Nursery – 10</span></div>
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>Co-educational</span></div>
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>Day &amp; Residential</span></div>
+            <div class="welcome-feature"><i data-lucide="check-circle"></i><span>Recognized Institution</span></div>
+          </div>
+        </div>
+        <div class="about-image reveal-right">
+          <img src="images/opt/campus.jpg" alt="Happy Kids High School campus" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VISION & MISSION (About) ==================== -->
+  <section class="section vision-section dashboard-panel" id="vision-mission" data-panel="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Vision &amp; Mission</span>
+        <h2 class="section-title">What we <span class="text-accent">stand for</span></h2>
+      </div>
+      <div class="vision-mission-grid">
+        <div class="vision-card reveal-up">
+          <div class="vision-icon"><i data-lucide="eye"></i></div>
+          <h3>Our Vision</h3>
+          <p>To be a school where every child discovers their potential — building confident, compassionate and capable individuals rooted in values and ready for the world.</p>
+        </div>
+        <div class="mission-card reveal-up">
+          <div class="vision-icon"><i data-lucide="compass"></i></div>
+          <h3>Our Mission</h3>
+          <ul class="mission-list">
+            <li><i data-lucide="check-circle"></i> Deliver quality education through innovative teaching.</li>
+            <li><i data-lucide="check-circle"></i> Foster critical thinking and problem-solving skills.</li>
+            <li><i data-lucide="check-circle"></i> Build confidence, discipline and leadership qualities.</li>
+            <li><i data-lucide="check-circle"></i> Encourage creativity, curiosity and lifelong learning.</li>
+            <li><i data-lucide="check-circle"></i> Create a safe, inclusive and inspiring environment.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS (About panel) ==================== -->
+  <section class="section achievements-section dashboard-panel" id="achievements" data-panel="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Our journey of <span class="text-accent">excellence</span></h2>
+        <p class="section-desc">Recognitions, academic results and competition successes that define our school.</p>
+      </div>
+
+      <!-- Recognitions — rendered from achievementsData.recognitions -->
+      <div class="recognition-grid" id="recognitionsGrid"><!-- recognition cards render here --></div>
+
+      <!-- Academic results & competition wins — rendered from achievementsData -->
+      <div class="achievement-blocks">
+        <div class="achievement-block reveal-up" style="--delay: 0.1s">
+          <h3 class="achievement-block-title"><i data-lucide="clipboard-check"></i> Academic Results</h3>
+          <div class="achievement-list" id="resultsList"><!-- results render here --></div>
+        </div>
+        <div class="achievement-block reveal-up" style="--delay: 0.2s">
+          <h3 class="achievement-block-title"><i data-lucide="trophy"></i> Competitions &amp; Awards</h3>
+          <div class="achievement-list" id="competitionsList"><!-- competitions render here --></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACADEMICS (panel) ==================== -->
+  <section class="section academics-full dashboard-panel" id="academics" data-panel="academics">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Our Academics</span>
+        <h2 class="section-title">Premier <span class="text-accent">CBSE education</span></h2>
+        <p class="section-desc">A comprehensive academic framework designed to nurture young minds from Nursery to Class 10.</p>
+      </div>
+
+      <div class="academics-grid academics-grid--full">
+        <div class="academic-card reveal-up" style="--delay: 0.1s">
+          <div class="academic-icon"><i data-lucide="book"></i></div>
+          <h3>CBSE &amp; SSC Curriculum</h3>
+          <p>Nationally recognized curricula providing a strong academic foundation and global readiness.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.2s">
+          <div class="academic-icon"><i data-lucide="child"></i></div>
+          <h3>Nursery to Class 10</h3>
+          <p>A complete educational journey from early childhood to secondary education under one roof.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.3s">
+          <div class="academic-icon"><i data-lucide="globe"></i></div>
+          <h3>English Medium Campus</h3>
+          <p>Full English instruction to develop fluency, confidence and communication skills.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.4s">
+          <div class="academic-icon"><i data-lucide="presentation"></i></div>
+          <h3>Smart Digital Classrooms</h3>
+          <p>Technology-enabled classrooms with interactive digital boards and modern tools.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.5s">
+          <div class="academic-icon"><i data-lucide="brain"></i></div>
+          <h3>Concept-Based Learning</h3>
+          <p>Building deep conceptual understanding rather than rote memorization.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.6s">
+          <div class="academic-icon"><i data-lucide="beaker"></i></div>
+          <h3>Activity-Based Education</h3>
+          <p>Hands-on learning through experiments, projects and interactive activities.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.7s">
+          <div class="academic-icon"><i data-lucide="clipboard-check"></i></div>
+          <h3>Continuous Assessment</h3>
+          <p>Regular evaluation and feedback to track and enhance student progress.</p>
+        </div>
+        <div class="academic-card reveal-up" style="--delay: 0.8s">
+          <div class="academic-icon"><i data-lucide="user-check"></i></div>
+          <h3>Individual Mentoring</h3>
+          <p>Personalized attention ensuring every student receives the support they deserve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOUNDATION PROGRAM (Academics) ==================== -->
+  <section class="section foundation-section dashboard-panel" id="foundation" data-panel="academics">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Foundation Program</span>
+        <h2 class="section-title">Future-ready <span class="text-accent">foundation program</span></h2>
+        <p class="section-desc">Preparing students from an early stage for academic excellence and competitive success.</p>
+      </div>
+
+      <div class="foundation-grid">
+        <div class="foundation-card reveal-up" style="--delay: 0.1s">
+          <div class="foundation-icon"><i data-lucide="calculator"></i></div>
+          <h3>JEE Foundation</h3>
+          <p>Early preparation for engineering entrance exams with strong fundamentals.</p>
+        </div>
+        <div class="foundation-card reveal-up" style="--delay: 0.2s">
+          <div class="foundation-icon"><i data-lucide="dna"></i></div>
+          <h3>NEET Foundation</h3>
+          <p>Comprehensive preparation for medical entrance examinations.</p>
+        </div>
+        <div class="foundation-card reveal-up" style="--delay: 0.3s">
+          <div class="foundation-icon"><i data-lucide="scale"></i></div>
+          <h3>Civil Services Foundation</h3>
+          <p>Building the analytical foundation needed for competitive government exams.</p>
+        </div>
+        <div class="foundation-card reveal-up" style="--delay: 0.4s">
+          <div class="foundation-icon"><i data-lucide="trophy"></i></div>
+          <h3>Olympiad Preparation</h3>
+          <p>Training for national and international Olympiads to sharpen intellect.</p>
+        </div>
+        <div class="foundation-card reveal-up" style="--delay: 0.5s">
+          <div class="foundation-icon"><i data-lucide="puzzle"></i></div>
+          <h3>Logical Reasoning</h3>
+          <p>Dedicated sessions for logical thinking and analytical reasoning.</p>
+        </div>
+        <div class="foundation-card reveal-up" style="--delay: 0.6s">
+          <div class="foundation-icon"><i data-lucide="check-check"></i></div>
+          <h3>Exam Readiness</h3>
+          <p>Regular practice and mock tests to build confidence and speed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FACILITIES (Campus) ==================== -->
+  <section class="section facilities-section dashboard-panel" id="facilities" data-panel="campus">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Campus &amp; Facilities</span>
+        <h2 class="section-title">Everything a <span class="text-accent">child needs</span></h2>
+        <p class="section-desc">A safe, well-equipped campus designed to inspire learning, creativity and growth.</p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card reveal-up" style="--delay: 0.1s">
+          <div class="facility-icon"><i data-lucide="presentation"></i></div>
+          <h3>Smart Classrooms</h3>
+          <p>Digital boards and modern learning tools for engaging lessons.</p>
+        </div>
+        <div class="facility-card reveal-up" style="--delay: 0.2s">
+          <div class="facility-icon"><i data-lucide="book-open"></i></div>
+          <h3>Library &amp; Resources</h3>
+          <p>A growing collection of books and learning resources for every age.</p>
+        </div>
+        <div class="facility-card reveal-up" style="--delay: 0.3s">
+          <div class="facility-icon"><i data-lucide="beaker"></i></div>
+          <h3>Science Learning</h3>
+          <p>Hands-on experiments that bring science concepts to life.</p>
+        </div>
+        <div class="facility-card reveal-up" style="--delay: 0.4s">
+          <div class="facility-icon"><i data-lucide="shield-check"></i></div>
+          <h3>Safe &amp; Secure Campus</h3>
+          <p>A protected environment where parents trust their children to learn.</p>
+        </div>
+        <div class="facility-card reveal-up" style="--delay: 0.5s">
+          <div class="facility-icon"><i data-lucide="home"></i></div>
+          <h3>Boys Residential Hostel</h3>
+          <p>Safe, comfortable and supervised accommodation for resident students.</p>
+        </div>
+        <div class="facility-card reveal-up" style="--delay: 0.6s">
+          <div class="facility-icon"><i data-lucide="bus"></i></div>
+          <h3>Transport Support</h3>
+          <p>Reliable transport covering major routes for day scholars.</p>
+        </div>
+        <div class="facility-card reveal-up" style="--delay: 0.7s">
+          <div class="facility-icon"><i data-lucide="dribbble"></i></div>
+          <h3>Sports &amp; Recreation</h3>
+          <p>Outdoor play areas and sports to keep students active and healthy.</p>
+        </div>
+        <div class="facility-card reveal-up" style="--delay: 0.8s">
+          <div class="facility-icon"><i data-lucide="music"></i></div>
+          <h3>Cultural Activities</h3>
+          <p>Music, dance, art and festivals that celebrate creativity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STUDENT LIFE (Campus) ==================== -->
+  <section class="section student-life-section dashboard-panel" id="campus-life" data-panel="campus">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Student Life</span>
+        <h2 class="section-title">Learning beyond <span class="text-accent">the classroom</span></h2>
+        <p class="section-desc">Students grow through sports, arts, competitions and community — building character for life.</p>
+      </div>
+
+      <div class="student-life-grid">
+        <div class="sl-card reveal-up" style="--delay: 0.1s"><div class="sl-icon"><i data-lucide="trophy"></i></div><h3>Sports</h3><p>Cricket, athletics and outdoor games</p></div>
+        <div class="sl-card reveal-up" style="--delay: 0.2s"><div class="sl-icon"><i data-lucide="beaker"></i></div><h3>Science Exhibitions</h3><p>Annual science fairs and innovation contests</p></div>
+        <div class="sl-card reveal-up" style="--delay: 0.3s"><div class="sl-icon"><i data-lucide="brain"></i></div><h3>Olympiad Training</h3><p>National &amp; international Olympiad practice</p></div>
+        <div class="sl-card reveal-up" style="--delay: 0.4s"><div class="sl-icon"><i data-lucide="palette"></i></div><h3>Arts &amp; Craft</h3><p>Painting, craft and creative expression</p></div>
+        <div class="sl-card reveal-up" style="--delay: 0.5s"><div class="sl-icon"><i data-lucide="music"></i></div><h3>Cultural Events</h3><p>Music, dance, drama and festivals</p></div>
+        <div class="sl-card reveal-up" style="--delay: 0.6s"><div class="sl-icon"><i data-lucide="award"></i></div><h3>Competitions</h3><p>Inter-school debates, quizzes and talent shows</p></div>
+        <div class="sl-card reveal-up" style="--delay: 0.7s"><div class="sl-icon"><i data-lucide="users"></i></div><h3>Leadership Programs</h3><p>Student councils and responsibility-building</p></div>
+        <div class="sl-card reveal-up" style="--delay: 0.8s"><div class="sl-icon"><i data-lucide="sparkles"></i></div><h3>Personality Development</h3><p>Confidence and communication workshops</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY (panel) ==================== -->
+  <section class="section gallery-section dashboard-panel" id="gallery" data-panel="gallery">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title">Life at <span class="text-accent">Happy Kids</span></h2>
+        <p class="section-desc">A look at our campus and the people who make our school a home.</p>
+      </div>
+
+      <div class="gallery-masonry" id="galleryMasonry">
+        <div class="gallery-item gallery-item--wide" data-caption="Main Campus" tabindex="0" role="button" aria-label="View Main Campus">
+          <img src="images/opt/campus-hero.jpg" alt="Main campus building" loading="lazy">
+          <div class="gallery-item-overlay"><span>Main Campus</span><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-item gallery-item--tall" data-caption="Our Founder" tabindex="0" role="button" aria-label="View Our Founder">
+          <img src="images/opt/founder-anil.jpg" alt="Founder K. Anil Kumar Reddy" loading="lazy">
+          <div class="gallery-item-overlay"><span>Our Founder</span><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-item" data-caption="Our Director" tabindex="0" role="button" aria-label="View Our Director">
+          <img src="images/opt/founder-shiva.jpg" alt="Director P. Siva Kumari" loading="lazy">
+          <div class="gallery-item-overlay"><span>Our Director</span><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-item" data-caption="Campus View" tabindex="0" role="button" aria-label="View Campus">
+          <img src="images/opt/campus.jpg" alt="Campus building view" loading="lazy">
+          <div class="gallery-item-overlay"><span>Campus View</span><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-item" data-caption="Our Emblem" tabindex="0" role="button" aria-label="View Our Emblem">
+          <img src="images/opt/logo.jpg" alt="School emblem" loading="lazy">
+          <div class="gallery-item-overlay"><span>Our Emblem</span><i data-lucide="maximize-2"></i></div>
+        </div>
+        <div class="gallery-item gallery-item--tall" data-caption="Courtyard" tabindex="0" role="button" aria-label="View Courtyard">
+          <img src="images/opt/campus-sm.jpg" alt="Campus courtyard" loading="lazy">
+          <div class="gallery-item-overlay"><span>Courtyard</span><i data-lucide="maximize-2"></i></div>
+        </div>
+      </div>
+      <p class="gallery-note reveal-up">More photographs from our classrooms, events and celebrations will be added soon.</p>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" aria-label="Close"><i data-lucide="x"></i></button>
+      <img src="" alt="" class="lightbox-image" id="lightboxImage">
+      <div class="lightbox-controls" id="lightboxControls">
+        <button class="lightbox-btn" id="lightboxPrev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+        <button class="lightbox-btn" id="lightboxNext" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ADMISSIONS (panel) ==================== -->
+  <section class="section admission-section dashboard-panel" id="admissions" data-panel="admissions">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Admissions</span>
+        <h2 class="section-title">Admissions <span class="text-accent">open 2026–27</span></h2>
+        <p class="section-desc">Begin your child's journey with Happy Kids High School. Classes Nursery to Class 10.</p>
+      </div>
+
+      <div class="admission-timeline reveal-up">
+        <div class="admission-step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-lucide="clipboard-list"></i></div>
+            <div><h3>Inquiry</h3><p>Call, email or message us — or visit the campus for information.</p></div>
+          </div>
+          <div class="step-connector"><i data-lucide="arrow-down"></i></div>
+        </div>
+        <div class="admission-step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-lucide="building"></i></div>
+            <div><h3>Visit Campus</h3><p>Tour our facilities and meet our faculty and staff.</p></div>
+          </div>
+          <div class="step-connector"><i data-lucide="arrow-down"></i></div>
+        </div>
+        <div class="admission-step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-lucide="file-text"></i></div>
+            <div><h3>Submit Application</h3><p>Complete the application form with the required documents.</p></div>
+          </div>
+          <div class="step-connector"><i data-lucide="arrow-down"></i></div>
+        </div>
+        <div class="admission-step">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-lucide="users"></i></div>
+            <div><h3>Interaction</h3><p>A friendly interaction with the student and parents.</p></div>
+          </div>
+          <div class="step-connector"><i data-lucide="arrow-down"></i></div>
+        </div>
+        <div class="admission-step">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-lucide="check-circle"></i></div>
+            <div><h3>Confirmation</h3><p>Admission confirmation to welcome your child to Happy Kids.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="admission-help reveal-up">
+        <div class="admission-help-card">
+          <i data-lucide="message-circle"></i>
+          <div>
+            <h3>Have questions about admissions?</h3>
+            <p>Our team is happy to help. Call <a href="tel:+917997599852">+91 79975 99852</a> or write to <a href="mailto:info@happykidshs.edu.in">info@happykidshs.edu.in</a>.</p>
+          </div>
+          <a href="https://wa.me/917997599852" target="_blank" rel="noopener" class="btn btn-accent">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ (Admissions) ==================== -->
+  <section class="section faq-section dashboard-panel" id="faq" data-panel="admissions">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Frequently asked <span class="text-accent">questions</span></h2>
+        <p class="section-desc">Answers to common questions from parents.</p>
+      </div>
+
+      <div class="faq-list reveal-up">
+        <div class="faq-item active">
+          <button class="faq-question">Which classes does Happy Kids offer? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-answer"><p>We offer classes from Nursery to Class 10 with both State Board (SSC) and CBSE curricula.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Is Happy Kids a day school or residential school? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-answer"><p>We are both. Students can attend as day scholars, and we provide a supervised residential hostel facility for boys.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What is the admission process? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-answer"><p>Submit an inquiry, visit the campus, complete the application, attend a student-parent interaction, and confirm admission.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">What are the school hours? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-answer"><p>The school operates from 7:30 AM to 3:30 PM on weekdays. Reach out to the office for the current schedule.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Does the school provide transport? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-answer"><p>Yes, transport support is available covering major routes. Please contact the office for the routes near you.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BRANCHES / CAMPUSES (panel) ==================== -->
+  <section class="section branches-section dashboard-panel" id="branches" data-panel="branches">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Our Campuses</span>
+        <h2 class="section-title">Growing across <span class="text-accent">five campuses</span></h2>
+        <p class="section-desc">Happy Kids is expanding to serve more families. Select a campus to learn more — full details and photographs are being confirmed by our central office.</p>
+      </div>
+
+      <div class="branches-grid" id="branchesGrid">
+        <!-- Campus cards rendered by JS -->
+      </div>
+      <p class="gallery-note reveal-up">Campus photographs and full facility details will be added for each location shortly.</p>
+    </div>
+
+    <!-- Branch detail modal -->
+    <div class="branch-modal" id="branchModal">
+      <div class="branch-modal-overlay" id="branchModalOverlay"></div>
+      <div class="branch-modal-container" id="branchModalContainer">
+        <button class="branch-modal-close" id="branchModalClose" aria-label="Close modal"><i data-lucide="x"></i></button>
+        <div class="branch-modal-content" id="branchModalContent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT (panel) ==================== -->
+  <section class="section contact-section dashboard-panel" id="contact" data-panel="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">We'd love to <span class="text-accent">hear from you</span></h2>
+        <p class="section-desc">Visit us, call us or send a message — our team responds promptly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <i data-lucide="phone"></i>
+            <h4>Phone</h4>
+            <a href="tel:+917997599852">+91 79975 99852</a>
+            <a href="tel:+917702996963">+91 77029 69663</a>
+          </div>
+          <div class="contact-card">
+            <i data-lucide="mail"></i>
+            <h4>Email</h4>
+            <a href="mailto:info@happykidshs.edu.in">info@happykidshs.edu.in</a>
+          </div>
+          <div class="contact-card">
+            <i data-lucide="map-pin"></i>
+            <h4>Address</h4>
+            <p>Shakarajupalle Village, Sidhout Block<br>Y.S.R. Kadapa District<br>Andhra Pradesh – 516247</p>
+          </div>
+          <div class="contact-card">
+            <i data-lucide="clock"></i>
+            <h4>Office Hours</h4>
+            <p>Mon – Fri: 7:30 AM – 3:30 PM</p>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Shakarajupalle+Sidhout+YSR+Kadapa+Andhra+Pradesh" target="_blank" rel="noopener" class="btn btn-outline-dark btn-block">
+            <i data-lucide="map"></i> Get Directions
+          </a>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Your email address" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Your phone number">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="How can we help?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message <i data-lucide="send"></i></button>
+            <p class="form-note">Prefer chat? Message us on <a href="https://wa.me/917997599852" target="_blank" rel="noopener">WhatsApp</a>.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="navbar-logo-tile"><img src="images/opt/logo.jpg" alt="Happy Kids High School logo" class="footer-logo-img"></span>
+              <div class="footer-logo-text">
+                <span class="footer-logo-title">Happy Kids</span>
+                <span class="footer-logo-sub">High School</span>
+              </div>
+            </div>
+            <p class="footer-desc">A co-educational, private unaided (recognized) school nurturing students from Nursery to Class 10 in Shakarajupalle Village, Y.S.R. Kadapa, Andhra Pradesh.</p>
+            <div class="footer-social">
+              <a href="https://wa.me/917997599852" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+              <a href="tel:+917997599852" aria-label="Call us"><i data-lucide="phone"></i></a>
+              <a href="mailto:info@happykidshs.edu.in" aria-label="Email us"><i data-lucide="mail"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-links">
+              <li><a href="javascript:void(0)" data-panel="about"><i data-lucide="chevron-right"></i> About Us</a></li>
+              <li><a href="javascript:void(0)" data-panel="academics"><i data-lucide="chevron-right"></i> Academics</a></li>
+              <li><a href="javascript:void(0)" data-panel="campus"><i data-lucide="chevron-right"></i> Campus Life</a></li>
+              <li><a href="javascript:void(0)" data-panel="gallery"><i data-lucide="chevron-right"></i> Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Admissions</h4>
+            <ul class="footer-links">
+              <li><a href="javascript:void(0)" data-panel="admissions"><i data-lucide="chevron-right"></i> Admission Process</a></li>
+              <li><a href="javascript:void(0)" data-panel="branches"><i data-lucide="chevron-right"></i> Our Campuses</a></li>
+              <li><a href="javascript:void(0)" data-panel="contact"><i data-lucide="chevron-right"></i> Contact</a></li>
+              <li><a href="javascript:void(0)" data-panel="admissions"><i data-lucide="chevron-right"></i> Apply Now</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-contact-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li><i data-lucide="map-pin"></i> Shakarajupalle Village, Sidhout Block, Y.S.R. Kadapa District, Andhra Pradesh – 516247</li>
+              <li><i data-lucide="phone"></i> <a href="tel:+917997599852">+91 79975 99852</a></li>
+              <li><i data-lucide="phone"></i> <a href="tel:+917702996963">+91 77029 69663</a></li>
+              <li><i data-lucide="mail"></i> <a href="mailto:info@happykidshs.edu.in">info@happykidshs.edu.in</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Happy Kids High School. All rights reserved.</span>
+        <span>Quality Education in Y.S.R. Kadapa, Andhra Pradesh</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== WHATSAPP FLOATING BUTTON ==================== -->
+  <a href="https://wa.me/917997599852" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <i data-lucide="message-circle"></i>
+    <span class="tooltip">Chat with us</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
